@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 1</title>
+</head>
+<body>
+    <iframe src="https://www.turners.co.nz" width="100%" height="1200" frameborder="0"></iframe>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "1ef7b61e-1668-4811-b314-7576b0f3c7f3", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "c932724b-c1da-4162-a7d3-7bfb54e096bd", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+    </script>
+    
+</body>
+</html>
